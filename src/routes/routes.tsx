@@ -13,6 +13,8 @@ import CarRent from "../admin/pages/car-rent";
 import AddCar from "../admin/pages/add-car";
 import Inbox from "../admin/pages/inbox";
 import CalendarPage from "../admin/pages/calendar";
+import SettingsPage from "../admin/pages/settings";
+import HelpCenterPage from "../admin/pages/helps";
 
 export const Router = () => {
   return (
@@ -31,6 +33,8 @@ export const Router = () => {
       <Route path="/admin/add-car" element={<AddCar />} />
       <Route path="/admin/inbox" element={<Inbox />} />
       <Route path="/admin/calendar" element={<CalendarPage />} />
+      <Route path="/admin/settings" element={<SettingsPage />} />
+      <Route path="/admin/help" element={<HelpCenterPage />} />
 
       {/* 404 */}
       <Route path="*" element={<Notfound />} />
