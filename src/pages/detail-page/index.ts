@@ -1,0 +1,1 @@
+export {default as Detail} from './detailCar-page'
