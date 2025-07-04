@@ -127,7 +127,8 @@ const CarRentPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+   <div className='flex flex-col sm:flex-row min-h-screen bg-gray-50 pl-2'>
+     <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-xl shadow-lg p-6">
         {/* Sarlavha va statistikalar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
@@ -364,6 +365,7 @@ const CarRentPage = () => {
         />
       )}
     </div>
+   </div>
   );
 };
 

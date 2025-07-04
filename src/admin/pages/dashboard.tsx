@@ -11,10 +11,7 @@ const CardContent = ({ children, className = '' }: { children: React.ReactNode; 
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col sm:flex-row min-h-screen bg-gray-50">
-      {/* Sidebar - Simulated for layout */}
-     <Sidebar/>
-
+    <div className="flex flex-col sm:flex-row min-h-screen bg-gray-50 ">
       <main className="flex-1 p-4 sm:p-6 grid grid-cols-1 md:grid-cols-3 gap-5">
         {/* Details Rental Card */}
         <Card className="md:col-span-2">

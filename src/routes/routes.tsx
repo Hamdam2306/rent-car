@@ -18,7 +18,8 @@ import HelpCenterPage from "../admin/pages/helps";
 
 export const Router = () => {
   return (
-    <Routes>
+    <div className="w-[calc(100vw-256px)] sm:flex-row min-h-screen bg-gray-50 pl-4">
+      <Routes>
       {/* User pages */}
       <Route path="/" element={<Home />} />
       <Route path="/cars" element={<Cars />} />
@@ -39,5 +40,6 @@ export const Router = () => {
       {/* 404 */}
       <Route path="*" element={<Notfound />} />
     </Routes>
+    </div>
   );
 };

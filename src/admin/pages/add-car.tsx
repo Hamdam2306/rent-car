@@ -17,7 +17,6 @@ import {
   X,
 
 } from 'react-feather';
-import Sidebar from '../components/sidebar';
 
 const AddCar = () => {
   const [formData, setFormData] = useState({
@@ -89,10 +88,9 @@ const AddCar = () => {
 
   return (
     <div className='flex'>
-        <Sidebar/>
         <div className="flex min-h-screen">
-      {/* Sidebar would go here */}
-      <div className="flex-1 p-4 md:p-8 overflow-auto">
+
+      <div className="flex-1 pt-0 md:p-4 overflow-auto">
         <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 md:p-8">

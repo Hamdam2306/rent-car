@@ -64,7 +64,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <aside
-        className={` left-0 sm:relative w-64 bg-white p-4 flex flex-col justify-between h-screen z-40 transition-all duration-300 ease-in-out
+        className={`!fixed sm:relative w-64 bg-white p-4 flex flex-col justify-between h-screen z-40 transition-all duration-300 ease-in-out
           ${isOpen ? 'left-0' : '-left-64'} sm:left-0 border-r border-gray-200`}
       >
         <div className="overflow-y-auto flex-grow">
