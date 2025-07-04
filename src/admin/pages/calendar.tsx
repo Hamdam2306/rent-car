@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, 
   isSameMonth, isSameDay, addDays } from 'date-fns';
-import Sidebar from '../components/sidebar';
+
 
 interface CalendarEvent {
   id: string;
@@ -177,17 +177,6 @@ const CalendarPage = () => {
     }
   };
 
-  // Kategoriya nomini olish
-  const getCategoryName = (category: string) => {
-    switch (category) {
-      case 'meeting': return "Uchrashuv";
-      case 'task': return "Vazifa";
-      case 'reminder': return "Eslatma";
-      case 'event': return "Tadbir";
-      case 'holiday': return "Bayram";
-      default: return category;
-    }
-  };
 
   // Oylik ko'rinishdagi kalendar
   const renderMonthView = () => {

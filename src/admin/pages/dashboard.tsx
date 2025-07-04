@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../components/sidebar';
+
 
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => {
   return <div className={`bg-white rounded-xl shadow-md ${className}`}>{children}</div>;
