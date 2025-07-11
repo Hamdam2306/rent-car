@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/home-page";
 import { Cars } from "../pages/carlist-page";
-import { Booking } from "../pages/booking-page";
+import Booking from "../pages/booking-page/booking-page";
 import { Detail } from "../pages/detail-page";
 import Login from "../pages/auth-page/login";
 import Register from "../pages/auth-page/register";
