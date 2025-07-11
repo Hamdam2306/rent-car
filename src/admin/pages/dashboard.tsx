@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => {
   return <div className={`bg-white rounded-xl shadow-md ${className}`}>{children}</div>;
 }
@@ -59,8 +58,8 @@ const Dashboard = () => {
                       <div className="text-xs font-medium text-gray-500">Location</div>
                       <div className="font-medium">Kota Semarang</div>
                     </div>
-                  </div>
-                  
+                  </div>                  
+
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-start gap-3">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -153,6 +152,8 @@ const Dashboard = () => {
           </CardContent>
         </Card>
 
+
+
         {/* Top 5 Car Rental Card */}
         <Card>
           <CardContent>
@@ -186,6 +187,10 @@ const Dashboard = () => {
             </div>
           </CardContent>
         </Card>
+
+
+        {/* <MapPage/> */}
+
 
         {/* Recent Transaction Card */}
         <Card className="md:col-span-3">

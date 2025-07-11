@@ -1,4 +1,3 @@
-// CalendarPage.tsx
 import { useState } from 'react';
 import { 
   FaCalendarAlt, 
@@ -25,7 +24,6 @@ interface CalendarEvent {
 }
 
 const CalendarPage = () => {
-  // Dastlabki eventlar
   const initialEvents: CalendarEvent[] = [
     { 
       id: '1', 

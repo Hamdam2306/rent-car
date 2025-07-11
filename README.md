@@ -70,7 +70,7 @@ helpers.ts – yordamchi funksiyalar (sana formatlash, narx formatlash va h.k.).
 | Hamdambek          | Loyihani boshqarish,Router,Admin panel                                   |  admin 
 | Muzaffar           | ![Home page](public/Content.png) va ![Category car](public/Content1.png) |  home    
 | Davlatbek          | Detail Car rent Toliq xolda (Navbar + Footer) + profile page             |  detail 
-| Zoir               | ![Home page](public/payment.png)                                         |  payment
+| Zoir               | ![Payment page](public/payment.png)                                      |  payment
 
 # QOIDALAR
 # Faqatgina o'zingizga berilgan faylga kod yozing 
