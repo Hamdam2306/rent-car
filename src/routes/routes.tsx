@@ -18,7 +18,7 @@ import HelpCenterPage from "../admin/pages/helps";
 
 export const Router = () => {
   return (
-    <div className="sm:flex-row min-h-screen bg-gray-50 pl-4">
+    <div className="sm:flex-row min-h-screen bg-gray-50">
       <Routes>
         {/* User pages */}
         <Route path="/" element={<Home />} />
