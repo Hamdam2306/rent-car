@@ -18,28 +18,29 @@ import HelpCenterPage from "../admin/pages/helps";
 
 export const Router = () => {
   return (
-    <div className="w-[calc(100vw-256px)] sm:flex-row min-h-screen bg-gray-50 pl-4">
+    <div className="sm:flex-row min-h-screen bg-gray-50 pl-4">
       <Routes>
-      {/* User pages */}
-      <Route path="/" element={<Home />} />
-      <Route path="/cars" element={<Cars />} />
-      <Route path="/booking" element={<Booking />} />
-      <Route path="/cars/:id" element={<Detail />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+        {/* User pages */}
+        <Route path="/" element={<Home />} />
+        <Route path="cars" element={<Cars />} />
+        <Route path="booking" element={<Booking />} />
+        <Route path="cars/:id" element={<Detail />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
 
-      {/* Admin pages */}
-      <Route path="/admin/dashboard" element={<Dashboard />} />
-      <Route path="/admin/cars" element={<CarRent />} />
-      <Route path="/admin/add-car" element={<AddCar />} />
-      <Route path="/admin/inbox" element={<Inbox />} />
-      <Route path="/admin/calendar" element={<CalendarPage />} />
-      <Route path="/admin/settings" element={<SettingsPage />} />
-      <Route path="/admin/help" element={<HelpCenterPage />} />
-
-      {/* 404 */}
-      <Route path="*" element={<Notfound />} />
-    </Routes>
+        {/* Admin pages */}
+        <Route path="/admin">
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="cars" element={<CarRent />} />
+          <Route path="add-car" element={<AddCar />} />
+          <Route path="inbox" element={<Inbox />} />
+          <Route path="calendar" element={<CalendarPage />} />
+          <Route path="settings" element={<SettingsPage />} />
+          <Route path="help" element={<HelpCenterPage />} />
+        </Route>
+        {/* 404 */}
+        <Route path="*" element={<Notfound />} />
+      </Routes>
     </div>
   );
 };
