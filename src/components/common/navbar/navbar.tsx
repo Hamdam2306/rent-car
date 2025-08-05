@@ -5,10 +5,16 @@ import { FiSearch, FiFilter } from "react-icons/fi";
 interface navbarProps {
   title: string;
   date: string;
-  subtitle?: string;
+  onSortProps: Boolean;
+  setOnSortProps: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Navbar({ title, date, subtitle }: navbarProps) {
+export function Navbar({
+  title,
+  date,
+  setOnSortProps,
+  onSortProps,
+}: navbarProps) {
   return (
     <>
       <div className="md:py-8 gap-4 py-6 md:px-8 px-5 flex md:items-center items-start justify-between w-full md:flex-row flex-col  max-w-[1440px]">
@@ -59,7 +65,10 @@ export function Navbar({ title, date, subtitle }: navbarProps) {
       <div className="w-full shadow-2xs bg-white flex justify-center">
         <div className="max-w-[1440px] w-full  md:px-15 md:py-10 px-6 py-8">
           <div className="flex items-center justify-between">
-            <div className="text-blue-600 font-bold text-[24px] md:text-[32px]">
+            <div
+              onClick={() => setOnSortProps(false)}
+              className="text-blue-600 font-bold text-[24px] md:text-[32px]"
+            >
               MORRENT
             </div>
 
@@ -67,6 +76,7 @@ export function Navbar({ title, date, subtitle }: navbarProps) {
               <div className="flex items-center w-full border rounded-full px-4 py-2 gap-2 border-gray-400">
                 <FiSearch className="text-gray-400" />
                 <input
+                  onClick={() => setOnSortProps(!onSortProps)}
                   type="text"
                   placeholder="Search something here"
                   className="flex-1 outline-none "
@@ -88,8 +98,6 @@ export function Navbar({ title, date, subtitle }: navbarProps) {
               <div className="size-11 hidden md:flex items-center justify-center border border-gray-200 rounded-[50%]">
                 <FaCog className="text-gray-600 cursor-pointer" />
               </div>
-
-              {/* Avatar */}
               <img
                 src="src\assets\icons\Profil.png"
                 className="size-7 md:size-11 "
