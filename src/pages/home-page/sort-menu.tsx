@@ -53,7 +53,6 @@ export const SortMenu = () => {
           </label>
         ))}
       </div>
-
       <div>
         <h3 className="text-gray-300 text-3 mb-7">Price</h3>
         <Slider

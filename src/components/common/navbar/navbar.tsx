@@ -66,7 +66,7 @@ export function Navbar({
         <div className="max-w-[1440px] w-full  md:px-15 md:py-10 px-6 py-8">
           <div className="flex items-center justify-between">
             <div
-              onClick={() => setOnSortProps(false)}
+              onClick={() => setOnSortProps(true)}
               className="text-blue-600 font-bold text-[24px] md:text-[32px]"
             >
               MORRENT
@@ -76,12 +76,15 @@ export function Navbar({
               <div className="flex items-center w-full border rounded-full px-4 py-2 gap-2 border-gray-400">
                 <FiSearch className="text-gray-400" />
                 <input
-                  onClick={() => setOnSortProps(!onSortProps)}
                   type="text"
                   placeholder="Search something here"
                   className="flex-1 outline-none "
                 />
-                <SlidersHorizontal color="#596780" size="24px" />
+                <SlidersHorizontal
+                  onClick={() => setOnSortProps(!onSortProps)}
+                  color="#596780"
+                  size="24px"
+                />
               </div>
             </div>
 
