@@ -23,7 +23,7 @@ export const SortMenu = () => {
   ];
 
   return (
-    <menu className="flex flex-col max-w-[360px] gap-14  p-8 bg-white shadow-sm">
+    <menu className="flex flex-col max-w-[360px] gap-14  p-8 bg-white shadow-sm h-[100%] ">
       <div className="flex flex-col gap-8 w-[176px]">
         <h3 className="text-gray-300 text-3">Type</h3>
         {types.map((item) => (
